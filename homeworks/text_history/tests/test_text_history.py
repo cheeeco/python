@@ -148,7 +148,7 @@ class TextHistoryTestCase(TestCase):
         self.assertEqual(3, delete.from_version)
         self.assertEqual(4, delete.to_version)
         self.assertEqual(0, delete.pos)
-        self.assertEqual(1, delete.length)
+        self.assertEqual(1, delete.len)
 
     def test_get_actions__bad(self):
         h = TextHistory()
